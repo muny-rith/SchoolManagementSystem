@@ -1,0 +1,7 @@
+﻿	<ItemGroup>
+		<None Include="data.txt" CopyToOutputDirectory="PreserveNewest" />
+		<None Include="dataGrade.txt" CopyToOutputDirectory ="PreserveNewest"/>
+		<None Include="dataPayment.txt" CopyToOutputDirectory ="PreserveNewest"/>
+		<None Include="fileTempory.txt" CopyToOutputDirectory ="PreserveNewest"/>
+		<None Include="dataResultMonthly.txt" CopyToOutputDirectory ="PreserveNewest"/>
+	</ItemGroup>

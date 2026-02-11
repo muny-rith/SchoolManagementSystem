@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        :root {
+  --main-bg-color: #f0f0f0;
+  --primary-text-color: #333333;
+  --accent-color: #007bff;
+  --font-size-small: 13.8px;
+  --font-size-large: 18px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 297mm; /* /2  A4 width at 96 DPI */
+    height: 210mm; /* A4 height at 96 DPI */
+    display: flex;
+    /* border: 1px solid black; */
+    
+}
+@font-face {
+  font-family: khMoulFont;
+  src: url('font/kh/KhmerOSmuollight.ttf');
+  /* font-size: 10px; */
+}
+@font-face {
+  font-family: khFont;
+  src: url('font/kh/KhmerOSbattambang.ttf');
+  /* font-size: 10px; */
+}
+@font-face {
+  font-family: engFont;
+  src: url('font/eng/times.ttf');
+}
+@font-face {
+  font-family: tacteingFont;
+  src: url('font/TACTENG.TTF');
+}
+.khmerMoul{
+    font-family: khMoulFont;
+    font-size: var(--font-size-small);
+    /* font-weight: 600; */
+}
+.khmerOS{
+    font-family: khFont;
+    font-size: var(--font-size-small);
+}
+.english{
+    font-size: var(--font-size-small);
+    font-family: engFont;
+    line-height: 1.87; /* increases space between lines */
+}
+.tacteing{
+    font-size: 30px;
+    font-family: tacteingFont;
+}
+@media print {
+    body {
+        width: 297mm;
+        height: 210m;
+        margin: 0;
+        padding: 0;
+    }
+}
+.main{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    background-image: url("image/4B.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 80px 120px 100px 120px;
+
+    /* padding: 140px; */
+}
+
+.main  .contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("image/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.p1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 22%;
+}
+.p1 .logo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    text-align: center;
+}
+.p1 .logo .logoimage{
+    height: 45% ;
+    width: 100%;
+    background-image: url('image/logo.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    margin-bottom: 5px;
+}
+.p1 .logo .no{
+
+}
+.p1 .kingdomcambodia{
+    width: 23%;
+    float: right;
+    text-align: center;
+}
+.p1 .kingdomcambodia .sign{
+
+}
+
+.p2{
+    text-align: center;
+    height: 15%;
+}
+.p3{
+    display: flex;
+    flex-direction: row;
+    height: 23%;
+    width: 100%;
+}
+.p3 .left{
+    width: 50%;
+}
+.p3 .right{
+    width: 50%;
+}
+.p4{
+    height: 9%;
+    text-align: center;
+}
+.p5{
+    padding-top: 10px;
+    width: 100%;
+    height:25%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="contain">
+            <div class="p1">
+                <div class="logo">
+                    <div class="logoimage" ></div>
+                    <div class="logotitle">
+                        <div class="khmerMoul" style="font-size: 9.5px ;color: rgb(255,109,00);">សាលារៀនអន្តរជាតិស្មាយលីង</div>
+                        <div class="english" style="font-size: 8px; font-weight: 700; color: rgb(255,109,00);">SMILING INTERNATIONAL SCHOOL</div>
+                    </div>
+                    <div class="no english">No................SIS</div>
+                </div>
+            <div class="" style="width: auto;"></div>
+            <div class="kingdomcambodia">
+                <div class="khmerMoul">ព្រះរាជាណាចក្រកម្ពុជា</div>
+                <div class="english" style="font-weight: bold; margin-bottom: 5px;">KINGDOM OF CAMBODIA</div>
+                <div class="khmerMoul">ជាតិ សាសនា ព្រះមហាក្សត្រ</div>
+                <div class="english" style="font-weight: bold;">NATION RELIGION KING</div>
+                <div class="tacteing">3</div>
+            </div>
+            </div>
+            <div class="p2">
+                <div class="khmerMoul">វិញ្ញាបនបត្របញ្ជាក់ការសិក្សា</div>
+                <div class="english" style="font-weight: bold;">CERTIFICATE OF ACHIEVEMENT</div>
+                <div class="khmerMoul">នាយក សាលារៀន អន្តរជាតិ ស្មាយលីង</div>
+            </div>
+            <div class="p3">
+                <div class="left">
+                    <div class="l1 khmerOS">សូមបញ្ជាក់ថា	: </div>
+                    <div class="l2 khmerOS">ភេទ 	សញ្ជាតិ 	ខ្មែរ</div>
+                    <div class="l3 khmerOS">ថ្ងៃខែឆ្នាំកំណើត	: </div>
+                    <div class="l4 khmerOS">ទីកន្លែងកំណើត	: </div>
+                    <div class="l5 khmerOS">បានចូលរៀន និងបញ្ចប់ដោយជោគជ័យក្នុងវគ្គសិក្សាភាសាអង់គ្លេសកម្រិត </div>
+                </div>
+                <div class="right">
+                    <div class="r1 english">This is to certify that	: </div>
+                    <div class="r2 english">Sex					Nationality		Khmer</div>
+                    <div class="r3 english">Date of Birth	: </div>
+                    <div class="r4 english">Place of Birth	: </div>
+                    <div class="r5 english">Has studied and successfully completed of ELS, level New Headway   Book</div>
+                </div>
+            </div>
+            <div class="p4">
+                <div class="khmerOS">វិញ្ញាបនបត្រនេះប្រគល់ជូនសាមីខ្លួនប្រើប្រាស់តាមការដែលអាចប្រើបាន។</div>
+                <div class="english">This is certificate of appreciation for being useful and worthy of what is right.</div>
+            </div>
+            <div class="p5">
+                <div class="left">
+                    <div class="khmerOS">ថ្ងៃសុក្រ ៥រោច ខែមិគសិរ ឆ្នាំរោង ឆស័ក ព. ស. ២៥៦៨</div>
+                    <div class="khmerOS">ភ្នំពេញ ថ្ងៃទី ២០ ខែធ្នូ ឆ្នាំ២០២៤</div>
+                    <div class="khmerMoul">នាយកសាលា</div>
+                </div>
+                <div class="center">
+
+                </div>
+                <div class="right">
+                    <div class="khmerOS">ថ្ងៃសុក្រ ៥រោច ខែមិគសិរ ឆ្នាំរោង ឆស័ក ព. ស. ២៥៦៨</div>
+                    <div class="khmerOS">ភ្នំពេញ ថ្ងៃទី ២០ ខែធ្នូ ឆ្នាំ២០២៤</div>
+                    <div class="khmerMoul">គ្រូបន្ទុកថ្នាក់</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

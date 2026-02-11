@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            width: 297mm; /* /2  A4 width at 96 DPI */
+            height: 210mm; /* A4 height at 96 DPI */
+            display: flex;
+            /* border: 1px solid black; */
+
+        }
+                @media print {
+            body {
+                width: 297mm;
+                height: 210m;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        @font-face {
+            font-family: khMoulFont;
+            src: url('font/kh/KhmerOSmuollight.ttf');
+            /* font-size: 10px; */
+        }
+        @font-face {
+            font-family: khFont;
+            src: url('font/kh/KhmerOSbattambang.ttf');
+            /* font-size: 10px; */
+        }
+        @font-face {
+            font-family: khPenSurin;
+            src: url('font/kh/KhmerPenSurin.ttf');
+            /* font-size: 10px; */
+        }
+        @font-face {
+            font-family: engFont;
+            src: url('font/eng/times.ttf');
+        }
+        @font-face{
+            font-family: chFont;
+            src: url('font/ch/simsun.ttc');
+        }
+        @font-face {
+            font-family: tacteingFont;
+            src: url('font/TACTENG.TTF');
+        }
+        .khmerMoul{
+            font-family: khMoulFont;
+            font-size: var(--font-size-small);
+            /* font-weight: 600; */
+        }
+        .khmerOS{
+            font-family: khFont;
+            font-size: var(--font-size-small);
+        }
+        .khmerPensurin{
+            font-family: khPensurin;
+            font-size: var(--font-size-small);
+        }
+        .english{
+            font-size: var(--font-size-small);
+            font-family: engFont;
+            line-height: 1.88; /* increases space between lines */
+        }
+        .chinese{
+            font-size: var(--font-size-small);
+            font-family: chFont;
+        }
+        .tacteing{
+            font-size: 30px;
+            font-family: tacteingFont;
+        }
+        .yellow{
+            color: rgb(254, 109, 3);
+        }
+        .main{
+
+            background-image: url('image/background.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contain{
+            width: 100%;
+            height: 100%;
+            /* background-color: rgba(255, 255, 0, 0.13) ; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .wrap1{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            /* text-align: end;
+             */
+            /* float: right; */
+            .block1{
+                width: 77.4%;
+            }
+            .block2{
+                width: 10%;
+                height: 100%;
+                text-align: center;
+                font-size: 124px;
+                font-weight: 900;
+                color: rgb(254, 109, 3);
+            }
+        }
+        .wrap2{
+            text-align: center;
+            display: inline-block;
+            font-size: 48px;
+            font-weight: 500;
+            color: rgb(254, 109, 3);
+            line-height: 1;
+            border-bottom: 2px solid rgb(254, 109, 3);
+        }
+        .wrap3{
+            margin-top: 18px;
+            text-align: center;
+            display: inline-block;
+            font-size: 26px;
+            color: rgb(30,54,83);
+            line-height: 1.2;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="contain">
+            <div style="height: 1%;"></div>
+            <div class="wrap1">
+                <div class="block1"></div>
+                <div class="block2 english">1</div>
+                <div class="block3"></div>
+            </div>
+            <div style="height: 25%; width: 10%;"></div>
+
+            <div class="wrap2 english">MUNY RITH</div>
+            <div class="wrap3 english">In recognition of his/her efforts and achievement in completing for<br>one year ESL program, level <span class="yellow">Superkids1</span>. Academy year <span class="yellow">2024-2025</span>.
+</div>
+        </div>
+    </div>
+</body>
+</html>
