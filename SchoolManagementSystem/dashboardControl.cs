@@ -17,6 +17,8 @@ namespace SchoolManagementSystem
 {
     public partial class dashboardControl : UserControl
     {
+        //joh
+        Color Re = Color.FromArgb(0, 1, 1);
         Color colorBlue = Color.FromArgb(223, 241, 250); // blue
         Color secondColor = ColorTranslator.FromHtml("#C4EBF7"); // blue
         Color thirdColor = ColorTranslator.FromHtml("#E5A865"); // brown
